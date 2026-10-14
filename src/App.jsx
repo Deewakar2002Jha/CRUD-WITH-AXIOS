@@ -5,14 +5,14 @@ import { useEffect } from 'react';
 const App = () => {
   console.log(getPosts());
 
-  const getpostData = async () => {
-    const response = await getPosts();
-    console.log(response);
-  }
+  // const getpostData = async () => {
+  //   const response = await getPosts();
+  //   console.log(response);
+  // }
 
-  useEffect(() => {
-    getPostData();
-  }, []);
+  // useEffect(() => {
+  //   getPostData();
+  // }, []);
   return (
     <div>App</div>
   )
