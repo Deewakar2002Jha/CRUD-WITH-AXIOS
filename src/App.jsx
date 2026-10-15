@@ -1,6 +1,7 @@
 import React from 'react'
 import { getPost } from './api/PostApi';
 import { useEffect } from 'react';
+import Post from './components/Post';
 
 const App = () => {
   // console.log(getPosts());
@@ -16,7 +17,9 @@ const App = () => {
     getPostData();
   }, []);
   return (
-    <div>App</div>
+    <section className='section-container'>
+      <Post />
+    </section>
   )
 }
 
