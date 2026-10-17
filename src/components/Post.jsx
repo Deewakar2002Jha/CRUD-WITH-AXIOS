@@ -22,7 +22,23 @@ const Post = () => {
 
                     return (
                         <li key={id}>
-                            <p>ID Number: 
+                            <p>ID Number:
+                                {id}</p>
+                            <p>Title: {title}</p>
+                            <p>Body :{body}</p>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </li>
+                    );
+                })}
+            </ul>
+            <ul>
+                {data.map((curElem) => {
+                    const { id, body, title } = curElem;
+
+                    return (
+                        <li key={id}>
+                            <p>ID Number:
                                 {id}</p>
                             <p>Title: {title}</p>
                             <p>Body :{body}</p>
